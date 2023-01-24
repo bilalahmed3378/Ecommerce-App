@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GradientButton: View {
+struct BlackButton: View {
     
     let lable : String
     
@@ -22,6 +22,26 @@ struct GradientButton: View {
         }
         .padding()
         .background(Color.black)
+        .cornerRadius(10)
+        .shadow(radius: 10)
+    }
+}
+
+struct BlueButton: View {
+    
+    let lable : String
+    
+    var body: some View {
+        
+        HStack{
+            Spacer()
+            Text(lable)
+                .foregroundColor(.white)
+                .font(AppFonts.ceraPro_14)
+            Spacer()
+        }
+        .padding()
+        .background(Color.blue)
         .cornerRadius(10)
         .shadow(radius: 10)
     }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59D699D1297FA72800C20C7D /* Login Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D699D0297FA72800C20C7D /* Login Screen.swift */; };
+		59D699D3297FAF7400C20C7D /* ForgetPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D699D2297FAF7400C20C7D /* ForgetPasswordScreen.swift */; };
+		59D699D5297FBB9000C20C7D /* VerifyOTPScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D699D4297FBB9000C20C7D /* VerifyOTPScreen.swift */; };
 		59D994F929669C2B00EB03FF /* Ecommerce_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D994F829669C2B00EB03FF /* Ecommerce_AppApp.swift */; };
 		59D994FB29669C2B00EB03FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D994FA29669C2B00EB03FF /* ContentView.swift */; };
 		59D994FD29669C3000EB03FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D994FC29669C3000EB03FF /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59D699D0297FA72800C20C7D /* Login Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Screen.swift"; sourceTree = "<group>"; };
+		59D699D2297FAF7400C20C7D /* ForgetPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordScreen.swift; sourceTree = "<group>"; };
+		59D699D4297FBB9000C20C7D /* VerifyOTPScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPScreen.swift; sourceTree = "<group>"; };
 		59D994F529669C2B00EB03FF /* Ecommerce App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ecommerce App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D994F829669C2B00EB03FF /* Ecommerce_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecommerce_AppApp.swift; sourceTree = "<group>"; };
 		59D994FA29669C2B00EB03FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59D699D6297FBFBE00C20C7D /* Home Screens */ = {
+			isa = PBXGroup;
+			children = (
+				59D9950F29669EE500EB03FF /* MainTabContainer.swift */,
+			);
+			path = "Home Screens";
+			sourceTree = "<group>";
+		};
 		59D994EC29669C2B00EB03FF = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +136,6 @@
 				59D9950E29669ECA00EB03FF /* Screens */,
 				59D994F829669C2B00EB03FF /* Ecommerce_AppApp.swift */,
 				59D994FA29669C2B00EB03FF /* ContentView.swift */,
-				59D9950F29669EE500EB03FF /* MainTabContainer.swift */,
 				59D994FC29669C3000EB03FF /* Assets.xcassets */,
 				59D994FE29669C3000EB03FF /* Preview Content */,
 			);
@@ -140,17 +153,21 @@
 		59D9950E29669ECA00EB03FF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				59D9951129669F2D00EB03FF /* Signup Screens */,
+				59D699D6297FBFBE00C20C7D /* Home Screens */,
+				59D9951129669F2D00EB03FF /* Authentication Screens */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		59D9951129669F2D00EB03FF /* Signup Screens */ = {
+		59D9951129669F2D00EB03FF /* Authentication Screens */ = {
 			isa = PBXGroup;
 			children = (
 				59D9951229669F5300EB03FF /* SignupScreen.swift */,
+				59D699D0297FA72800C20C7D /* Login Screen.swift */,
+				59D699D2297FAF7400C20C7D /* ForgetPasswordScreen.swift */,
+				59D699D4297FBB9000C20C7D /* VerifyOTPScreen.swift */,
 			);
-			path = "Signup Screens";
+			path = "Authentication Screens";
 			sourceTree = "<group>";
 		};
 		59D995142966A0D600EB03FF /* Resources */ = {
@@ -318,6 +335,7 @@
 				59D995662966A0E500EB03FF /* DisolvingEffect.swift in Sources */,
 				59D994F929669C2B00EB03FF /* Ecommerce_AppApp.swift in Sources */,
 				59D995692966A0E500EB03FF /* AppFonts.swift in Sources */,
+				59D699D3297FAF7400C20C7D /* ForgetPasswordScreen.swift in Sources */,
 				59D9951029669EE500EB03FF /* MainTabContainer.swift in Sources */,
 				59D995622966A0E500EB03FF /* SwipeItem.swift in Sources */,
 				59D995422966A0E500EB03FF /* AppColors.swift in Sources */,
@@ -325,7 +343,9 @@
 				59D9955B2966A0E500EB03FF /* BottomSheet.swift in Sources */,
 				59D9955D2966A0E500EB03FF /* WebView.swift in Sources */,
 				59D995652966A0E500EB03FF /* Dialog.swift in Sources */,
+				59D699D5297FBB9000C20C7D /* VerifyOTPScreen.swift in Sources */,
 				59D995542966A0E500EB03FF /* Country.swift in Sources */,
+				59D699D1297FA72800C20C7D /* Login Screen.swift in Sources */,
 				59D995602966A0E500EB03FF /* GradientButton.swift in Sources */,
 				59D995672966A0E500EB03FF /* Toast.swift in Sources */,
 				59D995572966A0E500EB03FF /* ShimmerView.swift in Sources */,
