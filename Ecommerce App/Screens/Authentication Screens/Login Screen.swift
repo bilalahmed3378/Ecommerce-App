@@ -13,9 +13,24 @@ struct Login_Screen: View {
     @State private var password = ""
     
     @State var showPassword = false
+    
+    @State var toMainTab = false
+
+    
+    @Binding var pushToSignup : Bool
+    
+    init (pushToSignup : Binding<Bool>){
+        self._pushToSignup = pushToSignup
+        
+    }
+
 
     var body: some View {
         ZStack{
+            
+            NavigationLink(destination: MainTabContainer(), isActive: self.$toMainTab){
+                EmptyView()
+            }
             VStack{
                 HStack{
                     VStack(alignment: .leading){
@@ -117,7 +132,7 @@ struct Login_Screen: View {
                                         self.showPassword.toggle()
                                     
                                 }){
-                                    Image(systemName: "eye.fill")
+                                    Image(systemName: "eye.slash.fill")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 20, height: 20)
@@ -148,9 +163,13 @@ struct Login_Screen: View {
                 }
                 
                 //button
-                
-                BlackButton(lable: "Login")
-                    .padding(.top,20)
+                Button(action: {
+                    self.toMainTab = true
+                }, label: {
+                    BlackButton(lable: "Login")
+                        .padding(.top,20)
+                    
+                })
                 
                 Group{
                     
@@ -204,13 +223,17 @@ struct Login_Screen: View {
                 
                 HStack{
                     Spacer()
-                    NavigationLink(destination: {
-                        SignupScreen()
-                    }, label: {
-                        Text("Not Register yet? Sign Up")
-                            .foregroundColor(Color.black)
-                            .font(AppFonts.ceraPro_14)
-                    })
+                    
+                   Button(action: {
+                       self.pushToSignup = true
+
+                   }, label: {
+                       Text("Not Register yet? Sign Up")
+                           .foregroundColor(Color.black)
+                           .font(AppFonts.ceraPro_14)
+               
+                   })
+                       
                    
                     Spacer()
                 }

@@ -13,6 +13,13 @@ struct SignupScreen: View {
     @State private var email = ""
     @State private var password = ""
     @State var showPassword = false
+    
+    @Binding var pushToSignup : Bool
+    
+    init (pushToSignup : Binding<Bool>){
+        self._pushToSignup = pushToSignup
+        
+    }
 
     var body: some View {
         ZStack{
@@ -135,7 +142,7 @@ struct SignupScreen: View {
                                         self.showPassword.toggle()
                                     
                                 }){
-                                    Image(systemName: "eye.fill")
+                                    Image(systemName: "eye.slash.fill")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 20, height: 20)
@@ -212,11 +219,15 @@ struct SignupScreen: View {
                 
                 HStack{
                     Spacer()
-                    NavigationLink(destination: Login_Screen()){
+                    Button(action: {
+                        self.pushToSignup = false
+                    }, label: {
                         Text("Already a member? Log In")
-                            .foregroundColor(Color.black)
-                            .font(AppFonts.ceraPro_14)
-                    }
+                        .foregroundColor(Color.black)
+                        .font(AppFonts.ceraPro_14)
+                
+                    })
+                            
                    
                     Spacer()
                 }

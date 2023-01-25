@@ -13,6 +13,42 @@ struct MainTabContainer: View {
     var body: some View {
         ZStack{
             
+            VStack{
+                
+                if (self.selectedTab == 0){
+                    HomeTab()
+                }
+                else if (self.selectedTab == 1){
+                    
+                }
+                else if (self.selectedTab == 2){
+                    
+                }
+                else{
+                    
+                }
+                
+                
+                
+                Spacer()
+                
+               
+                
+            }
+            
+            
+            // shadow
+            VStack{
+                Spacer()
+                HStack{
+                    Spacer()
+                    HStack{Spacer()
+                        .frame(height: 30)}
+                }
+                .padding(.top,20)
+                .background(RoundedCorners(tl: 15, tr: 15, bl: 0, br: 0).fill(.black))
+                .shadow(radius: 5,  y: -4)
+            }
             
             // bottom bar
             VStack{
@@ -36,6 +72,7 @@ struct MainTabContainer: View {
                             Text("Home")
                                 .foregroundColor(.black)
                         }
+                        .opacity(self.selectedTab == 0 ? 1 : 0.5)
                        
                     }
                     
@@ -58,6 +95,7 @@ struct MainTabContainer: View {
                             Text("Events")
                                 .foregroundColor(.black)
                         }
+                        .opacity(self.selectedTab == 1 ? 1 : 0.5)
                         
                     }
                     
@@ -77,6 +115,8 @@ struct MainTabContainer: View {
                             Text("Events")
                                 .foregroundColor(.black)
                         }
+                        .opacity(self.selectedTab == 2 ? 1 : 0.5)
+
                        
                     }
                     
@@ -96,6 +136,8 @@ struct MainTabContainer: View {
                             Text("Events")
                                 .foregroundColor(.black)
                         }
+                        .opacity(self.selectedTab == 3 ? 1 : 0.5)
+
                        
                     }
                     
@@ -104,11 +146,16 @@ struct MainTabContainer: View {
                    
                 }
                 .padding(.top,20)
-                .padding(.bottom, ((UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 20) + 20))
+                .padding(.bottom,20)
                 .background(RoundedCorners(tl: 15, tr: 15, bl: 0, br: 0).fill(.white))
                 
             }
         }
+        .navigationBarHidden(true)
+        .edgesIgnoringSafeArea(.bottom)
+        .onAppear(perform: {
+            UIScrollView.appearance().bounces = true
+        })
         
     }
 }
