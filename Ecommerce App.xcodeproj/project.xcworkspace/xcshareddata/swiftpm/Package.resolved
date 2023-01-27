@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3e091ee962391a2ddcae5b18e17bc625f9d88d6e"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "93ba02242acfacd7b47e05bdf39b6b72dfecc48e"
+      }
+    },
+    {
+      "identity" : "swiftui-introspect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/siteline/SwiftUI-Introspect.git",
+      "state" : {
+        "revision" : "f2616860a41f9d9932da412a8978fec79c06fe24",
+        "version" : "0.1.4"
+      }
+    },
+    {
+      "identity" : "swiftui-shimmer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markiv/SwiftUI-Shimmer.git",
+      "state" : {
+        "revision" : "965a7cbcbf094cbcf22b9251a2323bdc3432e171",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
