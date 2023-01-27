@@ -16,13 +16,13 @@ struct MainTabContainer: View {
             VStack{
                 
                 if (self.selectedTab == 0){
-                    HomeTab()
+                    HomeTab(selectedTab: self.$selectedTab)
                 }
                 else if (self.selectedTab == 1){
-                    
+                    SavedTab(selectedTab: self.$selectedTab)
                 }
                 else if (self.selectedTab == 2){
-                    
+                    CartScreen()
                 }
                 else{
                     
@@ -92,7 +92,7 @@ struct MainTabContainer: View {
                                 .resizable()
                                 .frame(width: 28, height: 28)
                             
-                            Text("Events")
+                            Text("Saved")
                                 .foregroundColor(.black)
                         }
                         .opacity(self.selectedTab == 1 ? 1 : 0.5)
@@ -112,7 +112,7 @@ struct MainTabContainer: View {
                                 .resizable()
                                 .frame(width: 28, height: 28)
                             
-                            Text("Events")
+                            Text("Cart")
                                 .foregroundColor(.black)
                         }
                         .opacity(self.selectedTab == 2 ? 1 : 0.5)
@@ -133,7 +133,7 @@ struct MainTabContainer: View {
                                 .resizable()
                                 .frame(width: 28, height: 28)
                             
-                            Text("Events")
+                            Text("Setting")
                                 .foregroundColor(.black)
                         }
                         .opacity(self.selectedTab == 3 ? 1 : 0.5)

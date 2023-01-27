@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		596C495A29839FA8002CC4B7 /* ItemsDetailViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C495929839FA8002CC4B7 /* ItemsDetailViewScreen.swift */; };
+		596C495C2983AEF6002CC4B7 /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C495B2983AEF6002CC4B7 /* CartScreen.swift */; };
+		596C495E2983D938002CC4B7 /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596C495D2983D937002CC4B7 /* SavedTab.swift */; };
 		59C1DF7B29810C25004F4CDA /* LoginSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1DF7A29810C25004F4CDA /* LoginSwitcher.swift */; };
 		59C1DF7D29812D00004F4CDA /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1DF7C29812D00004F4CDA /* HomeTab.swift */; };
 		59D699D1297FA72800C20C7D /* Login Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D699D0297FA72800C20C7D /* Login Screen.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		596C495929839FA8002CC4B7 /* ItemsDetailViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDetailViewScreen.swift; sourceTree = "<group>"; };
+		596C495B2983AEF6002CC4B7 /* CartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
+		596C495D2983D937002CC4B7 /* SavedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTab.swift; sourceTree = "<group>"; };
 		59C1DF7A29810C25004F4CDA /* LoginSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSwitcher.swift; sourceTree = "<group>"; };
 		59C1DF7C29812D00004F4CDA /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		59D699D0297FA72800C20C7D /* Login Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Screen.swift"; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 			children = (
 				59D9950F29669EE500EB03FF /* MainTabContainer.swift */,
 				59C1DF7C29812D00004F4CDA /* HomeTab.swift */,
+				596C495929839FA8002CC4B7 /* ItemsDetailViewScreen.swift */,
+				596C495B2983AEF6002CC4B7 /* CartScreen.swift */,
+				596C495D2983D937002CC4B7 /* SavedTab.swift */,
 			);
 			path = "Home Screens";
 			sourceTree = "<group>";
@@ -349,7 +358,9 @@
 				59D9955B2966A0E500EB03FF /* BottomSheet.swift in Sources */,
 				59C1DF7D29812D00004F4CDA /* HomeTab.swift in Sources */,
 				59D9955D2966A0E500EB03FF /* WebView.swift in Sources */,
+				596C495A29839FA8002CC4B7 /* ItemsDetailViewScreen.swift in Sources */,
 				59D995652966A0E500EB03FF /* Dialog.swift in Sources */,
+				596C495E2983D938002CC4B7 /* SavedTab.swift in Sources */,
 				59D699D5297FBB9000C20C7D /* VerifyOTPScreen.swift in Sources */,
 				59D995542966A0E500EB03FF /* Country.swift in Sources */,
 				59D699D1297FA72800C20C7D /* Login Screen.swift in Sources */,
@@ -361,6 +372,7 @@
 				59D995532966A0E500EB03FF /* CountryPicker.swift in Sources */,
 				59C1DF7B29810C25004F4CDA /* LoginSwitcher.swift in Sources */,
 				59D995522966A0E500EB03FF /* PullToRefresh.swift in Sources */,
+				596C495C2983AEF6002CC4B7 /* CartScreen.swift in Sources */,
 				59D995642966A0E500EB03FF /* MyText.swift in Sources */,
 				59D9954B2966A0E500EB03FF /* AppData.swift in Sources */,
 			);

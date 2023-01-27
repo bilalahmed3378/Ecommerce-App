@@ -19,6 +19,11 @@ struct AppImages {
     static let settingIconBlack = "settingIconBlack"
     static let belliconBlack = "belliconBlack"
     static let filterIcon = "filterIcon"
+    static let itemCardPic = "ItemCardPic"
+    static let itemDetailPic = "ItemDetailPic"
+
+    
+    
 
     
     
